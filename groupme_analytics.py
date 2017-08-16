@@ -1,6 +1,6 @@
 import requests
 
-access_token = 'Yy7L2qS2AF85HNNvMYvRERsbjOX8FkEHaIa9tfFi'
+access_token = ''
 f = open('out.txt', 'w')
 
 class Message:
