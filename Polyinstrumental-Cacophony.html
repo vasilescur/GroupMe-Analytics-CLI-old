@@ -1,0 +1,431 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>GroupMe Analytics</title>
+		
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<div class="group-name">Polyinstrumental Cacophony</div>
+		<div class="subtitle">4 Members &nbsp;&nbsp;|&nbsp;&nbsp; 24,588 Messages &nbsp;&nbsp;|&nbsp;&nbsp; Analytics generated as of 9:56 pm, 8/15/2017</div>
+		<hr/>
+
+		<h1>Group Analytics</h1>
+		<div class="top-level-content">
+		    <table>		    
+		    	<tr>
+		    		<th>
+		    			<h2>Message Distribution By Person:</h2>
+						<div id="msgDistributionByPerson" style="width: 500px; height: 400px;"></div>
+					</th>
+					
+					<th>
+						<h2>Mentions By Person:</h2>
+						<div id="mentionsByPerson" style="width: 500px; height: 400px;"></div>
+					</th>
+				</tr>
+				
+				<tr>
+					<th>
+						<h2>Likes Received By Person (Normalized*):</h2>
+						<div id="likesReceivedByPerson" style="width: 500px; height: 400px;"></div>
+					</th>
+					
+					<th>
+						<h2>Average Likes Per Message By Person:</h2>
+						<div id="avgLikesPerMsgByPerson" style="width: 500px; height: 400px;"></div>
+					</th>
+				</tr>
+		    </table>
+		    <br/><br/>
+			<div style="font-size: 20px">*Note: "Likes Received By Person" respresents normalized data, calculated according to the formula: 
+			<br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Likes Received  /  Total Messages Sent) * 10,000 </div>
+		</div>
+		
+		<hr style="margin-top: 80px;"/>
+		
+		<h1>User Analytics</h1>
+		<div class="top-level-content">
+			<h3><strong>Claudia Bow</strong> (Beethoven)</h3>
+				<div class="user-content">
+					<h2>Messages Sent:</h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>9091</p>
+					<br/>
+					<h2>Likes Received:</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <p>1762</p>
+					<br/>
+					<h2>Avg. Likes/msg:</h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <p>0.19</p>
+					<br/>
+					<h2>Times Mentioned:</h2> &nbsp;&nbsp; <p>118</p>
+					
+					<br/><br/>
+					<h2>Likes Received By Claudia From:</h2>
+					<br/>
+					<div id="likesReceivedByClaudia"></div>
+					<br/>
+					
+					<h2>Likes Given By Claudia To:</h2>
+					<br/>
+					<div id="likesGivenByClaudia"></div>
+					
+				</div>
+			<h3><strong>Radu Vasilescu</strong> (Breadstick)</h3>
+				<div class="user-content">
+					<h2>Messages Sent:</h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>6998</p>
+					<br/>
+					<h2>Likes Received:</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <p>1142</p>
+					<br/>
+					<h2>Avg. Likes/msg:</h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <p>0.16</p>
+					<br/>
+					<h2>Times Mentioned:</h2> &nbsp;&nbsp; <p>178</p>
+					
+					<br/><br/>
+					<h2>Likes Received By Radu From:</h2>
+					<br/>
+					<div id="likesReceivedByRadu"></div>
+					<br/>
+					
+					<h2>Likes Given By Radu To:</h2>
+					<br/>
+					<div id="likesGivenByRadu"></div>
+				</div>
+			<h3><strong>Emily Kiehl</strong> (Copy Pasta With Bacon)</h3>
+				<div class="user-content">
+					<h2>Messages Sent:</h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>2683</p>
+					<br/>
+					<h2>Likes Received:</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <p>933</p>
+					<br/>
+					<h2>Avg. Likes/msg:</h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <p>0.35</p>
+					<br/>
+					<h2>Times Mentioned:</h2> &nbsp;&nbsp; <p>198</p>
+					
+					<br/><br/>
+					<h2>Likes Received By Emily From:</h2>
+					<br/>
+					<div id="likesReceivedByEmily"></div>
+					<br/>
+					
+					<h2>Likes Given By Emily To:</h2>
+					<br/>
+					<div id="likesGivenByEmily"></div>
+				</div>
+			<h3><strong>Shannon Symons</strong> (The Disembodied Voice of Satan)</h3>
+				<div class="user-content">
+					<h2>Messages Sent:</h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p>4101</p>
+					<br/>
+					<h2>Likes Received:</h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <p>975</p>
+					<br/>
+					<h2>Avg. Likes/msg:</h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <p>0.24</p>
+					<br/>
+					<h2>Times Mentioned:</h2> &nbsp;&nbsp; <p>177</p>
+					
+					<br/><br/>
+					<h2>Likes Received By Shannon From:</h2>
+					<br/>
+					<div id="likesReceivedByShannon"></div>
+					<br/>
+					
+					<h2>Likes Given By Shannon To:</h2>
+					<br/>
+					<div id="likesGivenByShannon"></div>
+				</div>
+		</div>
+
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		
+		<hr/>
+		
+		<div class="top-level-content">
+			<h4 style="line-height: 0px;">Created by Radu Vasilescu.</h4>
+			<p style="padding-top: -20px; font-size: 18px;">Statistics generated in Python using the GroupMe API. Charts made with the Google Charts JavaScript library.</p><br/>
+			<p style="font-size: 18px;">HTML page design by Radu Vasilescu.</p>
+			<br/><br/>
+			<p style="font-size: 20px;">View the source on GitHub <a href="https://github.com/vasilescur/GroupMe-Analytics">here</a>.</p>
+			<br/>
+			<br/>
+		</div>
+
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		<script type="text/javascript">
+			
+			/*
+				Colors:
+				
+				Claudia: #3366CC (Blue)
+				Radu: #DC3912 (Red)
+				Emily: #FF9900 (Yellow)
+				Shannon: #109618 (Green)
+			*/
+			
+			colors = {
+				'Claudia': '#3366CC',
+				'Radu': '#DC3912',
+				'Emily': '#FF9900',
+				'Shannon': '#109618'
+			};
+			
+			google.charts.load("current", {packages:["corechart"]});
+			
+		    var donutOptions = {
+		  	  pieHole: 0.4,
+		  	  chartArea: {
+				  'width': '100%', 
+				  'height': '80%' 
+			  },
+			  legend: {
+				  textStyle: { fontSize: 18 },
+				  position: 'right'
+			  }
+		    };
+			
+			var barOptions = {
+			  fontSize: 18,
+			  legend: { position: 'left' },
+			  chartArea: {
+				'width': '60%', 
+				'height': '60%'
+			  },
+			};
+			
+			// Message Distribution By Person			
+			google.charts.setOnLoadCallback(drawMsgDistributionByPersonChart);
+			function drawMsgDistributionByPersonChart() {
+			  var data = google.visualization.arrayToDataTable([
+				['Person', 'Messages Sent'],
+				['Claudia',	9091],
+				['Radu',    6998],
+				['Emily',  	2683],
+				['Shannon', 4101]
+			  ]);
+			  
+			  var chart = new google.visualization.PieChart(document.getElementById('msgDistributionByPerson'));
+			  chart.draw(data, donutOptions);
+			}
+			
+			
+			// Likes Received By Person
+			google.charts.setOnLoadCallback(drawLikesReceivedByPersonChart);
+			function drawLikesReceivedByPersonChart() {
+			  var data = google.visualization.arrayToDataTable([
+				['Person', 'Likes Received', { role: 'style' }],
+				  // Data normalization: (likesReceived / totalMsgSent) * 10000
+				['Claudia',	(1762/9091)*10000, 	colors.Claudia],
+				['Radu',    (1142/6998)*10000, 	colors.Radu],
+				['Emily',  	(933/2683)*10000, 	colors.Emily],
+				['Shannon', (975/4101)*10000, 	colors.Shannon]
+			  ]);
+
+			  var chart = new google.visualization.BarChart(document.getElementById('likesReceivedByPerson'));
+			  chart.draw(data, barOptions);
+			}
+			
+			// Mentions by Person		
+			google.charts.setOnLoadCallback(drawMentionsByPerson);
+			function drawMentionsByPerson() {
+			  var data = google.visualization.arrayToDataTable([
+				['Person', 'Times Mentioned', { role: 'style' }],
+				['Claudia',	118, 	colors.Claudia],
+				['Radu',    178, 	colors.Radu],
+				['Emily',  	198, 	colors.Emily],
+				['Shannon', 177, 	colors.Shannon]
+			  ]);
+				
+		      var options = {
+				fontSize: 18,
+			  	legend: { position: 'left' },
+				chartArea: {
+				  'width': '60%', 
+				  'height': '60%'
+				},
+				hAxis: { 
+				  viewWindow: {
+					max: 250,
+					min: 0
+				  }
+				}
+			  };
+				
+			  var chart = new google.visualization.BarChart(document.getElementById('mentionsByPerson'));
+			  chart.draw(data, options);
+			}
+			
+			// Average Likes Per Message By Person
+			google.charts.setOnLoadCallback(drawAvgLikesPerMsgByPerson);
+			function drawAvgLikesPerMsgByPerson() {
+			  var data = google.visualization.arrayToDataTable([
+				['Person', 'Likes Received'],
+				['Claudia',	0.19],
+				['Radu',    0.16],
+				['Emily',  	0.35],
+				['Shannon', 0.24]
+			  ]);
+
+			  var chart = new google.visualization.PieChart(document.getElementById('avgLikesPerMsgByPerson'));
+			  chart.draw(data, donutOptions);
+			}
+			
+			
+			// ||||||||||||||||||||||||||||||||||||||||||||||||
+			// |||||||||||| People's like graphs ||||||||||||||
+			// ||||||||||||||||||||||||||||||||||||||||||||||||
+			
+			
+			var likesBarOptions = {
+			  fontSize: 18,
+			  legend: { position: 'left' },
+			  chartArea: {
+				'width': '60%', 
+				'height': '60%'
+			  },
+			  hAxis: {
+				  viewWindow: {
+					  min: 0,
+					  max: 4000
+				  }
+			  }
+			};
+			
+			
+			// |||||||||||||||||||||||||| CLAUDIA ||||||||||||||||||||||||||
+			
+			
+			// Likes Received by Claudia
+			google.charts.setOnLoadCallback(drawLikesReceivedByClaudia);
+			function drawLikesReceivedByClaudia() {
+				var data = google.visualization.arrayToDataTable([
+					['Perosn', 'Likes Given to Claudia', { role: 'style' }],
+					['Radu',	2564,	colors.Radu],
+					['Emily',	1392,	colors.Emily],
+					['Shannon',	3012,	colors.Shannon]
+				])
+				
+				var chart = new google.visualization.BarChart(document.getElementById('likesReceivedByClaudia'));
+				chart.draw(data, likesBarOptions);
+			}
+			
+			// Likes Given by Claudia
+			google.charts.setOnLoadCallback(drawLikesGivenByClaudia);
+			function drawLikesGivenByClaudia() {
+				console.log('FUCK FUCK FUCK FUCK FUCK');
+				var data = google.visualization.arrayToDataTable([
+					['Perosn', 'Likes Received from Claudia', { role: 'style' }],
+					['Radu',	1840,	colors.Claudia],
+					['Emily',	1096,	colors.Emily],
+					['Shannon',	1288,	colors.Shannon]
+				])
+				
+				var chart = new google.visualization.BarChart(document.getElementById('likesGivenByClaudia'));
+				chart.draw(data, likesBarOptions);
+			}
+			
+			
+			// |||||||||||||||||||||||||| RADU ||||||||||||||||||||||||||
+			
+			// Likes Received by Radu
+			google.charts.setOnLoadCallback(drawLikesReceivedByRadu);
+			function drawLikesReceivedByRadu() {
+				var data = google.visualization.arrayToDataTable([
+					['Perosn', 'Likes Given to Radu', { role: 'style' }],
+					['Claudia',	1840,	colors.Claudia],
+					['Emily',	744,		colors.Emily],
+					['Shannon',	1964,	colors.Shannon]
+				])
+				
+				var chart = new google.visualization.BarChart(document.getElementById('likesReceivedByRadu'));
+				chart.draw(data, likesBarOptions);
+			}
+			
+			// Likes Given by Radu
+			google.charts.setOnLoadCallback(drawLikesGivenByRadu);
+			function drawLikesGivenByRadu() {
+				var data = google.visualization.arrayToDataTable([
+					['Perosn', 'Likes Received from Radu', { role: 'style' }],
+					['Claudia',	1560,	colors.Claudia],
+					['Emily',	2564,	colors.Emily],
+					['Shannon',	1688,	colors.Shannon]
+				])
+				
+				var chart = new google.visualization.BarChart(document.getElementById('likesGivenByRadu'));
+				chart.draw(data, likesBarOptions);
+			}
+			
+			
+			// |||||||||||||||||||||||||| EMILY ||||||||||||||||||||||||||
+			
+			// Likes Received by Emily
+			google.charts.setOnLoadCallback(drawLikesReceivedByEmily);
+			function drawLikesReceivedByEmily() {
+				var data = google.visualization.arrayToDataTable([
+					['Perosn', 'Likes Given to Emily', { role: 'style' }],
+					['Claudia',	1096,	colors.Claudia],
+					['Radu',	1560,	colors.Radu],
+					['Shannon',	1072,	colors.Shannon]
+				])
+				
+				var chart = new google.visualization.BarChart(document.getElementById('likesReceivedByEmily'));
+				chart.draw(data, likesBarOptions);
+			}
+			
+			// Likes Given by Emily
+			google.charts.setOnLoadCallback(drawLikesGivenByEmily);
+			function drawLikesGivenByEmily() {
+				var data = google.visualization.arrayToDataTable([
+					['Perosn', 'Likes Received from Emily', { role: 'style' }],
+					['Claudia',	1392,	colors.Claudia],
+					['Radu',	744,	colors.Radu],
+					['Shannon',	924,	colors.Shannon]
+				])
+				
+				var chart = new google.visualization.BarChart(document.getElementById('likesGivenByEmily'));
+				chart.draw(data, likesBarOptions);
+			}
+			
+			
+			// |||||||||||||||||||||||||| SHANNON ||||||||||||||||||||||||||
+			
+			// Likes Received by Shannon
+			google.charts.setOnLoadCallback(drawLikesReceivedByShannon);
+			function drawLikesReceivedByShannon() {
+				var data = google.visualization.arrayToDataTable([
+					['Perosn', 'Likes Given to Shannon', { role: 'style' }],
+					['Claudia',	1288,	colors.Claudia],
+					['Radu',	1688,	colors.Radu],
+					['Emily',	924,	colors.Emily]
+				])
+				
+				var chart = new google.visualization.BarChart(document.getElementById('likesReceivedByShannon'));
+				chart.draw(data, likesBarOptions);
+			}
+			
+			// Likes Given by Shannon
+			google.charts.setOnLoadCallback(drawLikesGivenByShannon);
+			function drawLikesGivenByShannon() {
+				var data = google.visualization.arrayToDataTable([
+					['Perosn', 'Likes Received from Shannon', { role: 'style' }],
+					['Claudia',	3012,	colors.Claudia],
+					['Radu',	1964,	colors.Radu],
+					['Emily',	1072,	colors.Emily]
+				])
+				
+				var chart = new google.visualization.BarChart(document.getElementById('likesGivenByShannon'));
+				chart.draw(data, likesBarOptions);
+			}	
+			
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
