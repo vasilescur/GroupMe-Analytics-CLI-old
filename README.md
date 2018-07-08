@@ -2,7 +2,7 @@
 
 ---
 
-## This is a deprecated version.
+### This is a deprecated version.
 The new web app resides at [TODO: link]()
 
 ---
