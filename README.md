@@ -1,4 +1,12 @@
 # GroupMe Analytics
+
+---
+
+## This is a deprecated version.
+The new web app resides at [TODO: link]()
+
+---
+
 Scans a GroupMe chat and generates insightful message and like analytics.
 
 ## [Online Demo](http://vasilescur.github.io/GroupMe-Analytics)
